@@ -31,7 +31,8 @@ custom_file_path:
   #bodyEnd: source/_data/body-end.swig
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  #style: source/css/_custom/custom.styl
+
 
 
 # ---------------------------------------------------------------
@@ -183,7 +184,7 @@ site_state: true
 social:
   GitHub: https://github.com/Zhangli777 || github
   E-Mail: mailto:411560180@qq.com || envelope
-  Weibo: https://weibo.com/6589033018/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1 || weibo
+  #Weibo: https://weibo.com/6589033018/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1 || weibo
   #Google: https://plus.google.com/yourname || google
   Twitter: https://twitter.com/coekily || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -191,7 +192,7 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   Instagram: https://instagram.com/coekily || instagram
   #Skype: skype:yourname?call|chat || skype
-  Bilibili: https://space.bilibili.com/412783701 || 
+  #Bilibili: https://space.bilibili.com/412783701 || youtube
   QQ : http://wpa.qq.com/msgrd?v=3&uin=411560180&site=qq&menu=yes || qq
   RSS: /atom.xml || rss
 social_icons:

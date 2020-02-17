@@ -1,154 +1,21 @@
-// 网站背景（自适应）
-//导航区背景
-.site-meta {
-  background: url("E:\blog\themes\hexo-theme-next\source\images\header-bg.jpg");
-  background-position: 70% 20%;
-  padding: 18px 0;
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1581669668965'); /* IE9 */
+  src: url('iconfont.eot?t=1581669668965#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMwAAsAAAAABvgAAALkAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBfIFzATYCJAMICwYABCAFhG0HNxsgBhEVlAtkPzV2m0Vs0FJLAMz305BwDnfwGiSwAQAAAABBkGu5uaSE5NkBowaSDPb/S76u45kt+iqCAC53v6fNhR9v0FIMtQSWYNR9a7+TdnSSTSinEdPqOnvyV+7tDdZUGt4IRSwRKlUsk6ABAgjE/s/l9FZAgcwPlMsck496AcZbAx1rUICBFVAA3DB2E8EDPAwBmJMTiUjvyCzEFBkwSgCiM22pw7TgR0Z2UjoCasNChTCLgq6NaccYzPDviy8iYQoaigRU5LKMRpJ/K2FUrvyPoAiC5ayAswwkEAkoEIWN8WxDIjhUiRlX1HCsUgHexv7/qRFx1D8PYQwotgTAU+c/kwALH7VYA0Dp3UUGNE96M1BhvpVN//GIY5fF/sH+LeL1q8/69TMg376DFj0n6xu7m3qn/iWnshWXwZWJIuu9LVdrZDtIbO562Os7tRPbMLI1viPE6K5VLraqGzesu5vFXv38R/6IfFeOx6FJtA6XpYlyxGFG0VqYGLHWN5DwtLfe25setJvUpl/wH+l/p05Pjhfn5xQ3I/nT6WL080xdflx2WB5NZSW5bJu7e8XRnY3roMkAQbkrbf7zb7i47Nyssan76xYKgEc+FMi1imFOML0bh4C/KhhYpWIRUGmPxzccGtecFw10ruviH3Db8zpV7fQKaYFO8iJOjSwDiU6LKsoKRlheG6h0ezAtOpdbIppNmAHMNjUQ+K5B5HqAxPeCypQfUKT+QOVng+lWtKGlL3XOGqcJ52BmGdJZJRkykSNKezCe59M6L+K0AdRFGoLQC8qpTpSol5hSLMQREQOmlYAO7TjkXEGuVYaz5CVEeY3vs6YXebNKGI4zDU0jaA6YsQykZikSo/WJU/l8DxSbx03THaQR+wCkFdLeQcgTDEA75XIQ6VGeKSyIRQhhAKMpAujQ+iGOU0De3C+DZhFPMiGaq+HDWmyo3NteKf5uA2ACGjGYK+E85SnWuIzYuGEA') format('woff2'),
+  url('iconfont.woff?t=1581669668965') format('woff'),
+  url('iconfont.ttf?t=1581669668965') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1581669668965#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-//页面背景
-body {
-  background-image: url("E:\blog\themes\hexo-theme-next\source\images\body-bg.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%; 
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-//改变背景色和透明度等
-.main-inner {
-background: rgba(0, 0, 0, 0.75);
-padding: 3.5em; //博文边框
-opacity: 1; //整体透明度，包括字体
-border-radius: 1em; //边框圆角
-}
-
-// 字体颜色
-.post-body {
-    color: #fff; //黑色
-}
-
-//博文列表内大框样式
-.post {
-  width: 100%;
-  margin-top: 1em; //距离顶部
-  margin-bottom: 3em; //距离下一篇文章顶部距离
-  padding: 1em; //预览文字内缩距离
-  -webkit-box-shadow: 0 0 0.5em rgba(202, 203, 203, .5); // 边框渐变线样式
- }
-
-
-// 网站描述
-.site-subtitle{ font-size: 1em; color: white; }
-
-// 网站标题
-.site-title {
-    font-size: 2em; //字体大小
-    font-weight: bold; //字体：粗体
-}
-
-// 标题背景
-.brand{
-    background: transparent; //透明
-}
-
-// 菜单栏
-.menu {
-    margin-top: 2em;
-    padding-left: 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5); //菜单栏背景色
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1em; // 圆角化
-}
-
-// 菜单图表链接 以及 超链接样式
-.menu .menu-item a {
-    color: rgba(0,0,0,1);
-}
-.menu .menu-item a:hover {
-    color: #ff106c;
-    border-bottom-color: #ff106c;
-}
-
-// 菜单字体颜色
-.menu .menu-item a {
-    color: #fff; //白色
-}
-
-// 菜单
-.menu .menu-item a {
-    font-size: 1.4em; //字体大小
-}
-.menu .menu-item a:hover {
-    border-bottom-color: #ff106c;
-}
-
-//菜单分类显示数字
-.menu .menu-item .badge {
-    display: inline-block;
-    padding: 0.1em 0.4em;
-    margin-left: 5px;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #a9a6a654;
-}
-
-.post-title {
-    display: inline-block;
-    position: relative;
-    color: #FF0000; // 文章标题颜色
-    border-bottom: none;
-    line-height: 1.2;
-    vertical-align: top;
-}
-
-
-// 头部inner
-.header-inner {
-    padding: 4em 0 2em;
-}
-
-// 站点描述
-.site-description {
-    font-size: 1em;
-
-}
-
-// 作者名
-.site-author-name {
-    font-family: 'Comic Sans MS', sans-serif;
-    font-size: 1.5em;
-
-// 移动端优化-解决移动端按钮被遮挡
-.site-nav-toggle {
-  top: 0;
-  transform:  translateY(78%);
-}
-
-// 普通按钮样式
-element.style {
-    background-color: #43413f;
-    color: #ffffff;
-}
-.btn:hover {
-    border-color: #fff; // 鼠标经过时边框颜色
-    color: #222;
-    background: #fff;
-}
-
-.local-search {
-    display: none;
-    position: fixed;
-    top: 10%;
-    left: ;
-    margin-left: ;
-    height: 80%;
-    padding: 0;
-    background: #000000ab; // 搜索框背景色
-    color: #000000; // 搜索框文字颜色
-    z-index: 9999;
-    border-radius: 0.5em;
+.icon-bilibili-fill:before {
+  content: "\e75c";
 }

@@ -40,6 +40,16 @@
 {%- endif %}
 
 <link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
+<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 {{ next_font() }}
 
@@ -57,5 +67,6 @@
   <link rel="stylesheet" href="{{ pace_css_uri }}">
   <script src="{{ pace_js_uri }}"></script>
 {%- endif %}
+
 
 {{ next_config() }}
