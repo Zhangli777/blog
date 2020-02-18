@@ -1,4 +1,4 @@
-#The blog based on Node.js and netlify!
+# The blog based on Node.js and netlify!
 
 npm install
 
